@@ -1,0 +1,93 @@
+:root {
+  --c1: rgba(0, 0, 0);
+  --c2: yellow;
+  --c3: purple;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  background-image: conic-gradient(var(--c1), yellow, purple);
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  position: absolute;
+  background-image: conic-gradient(purple, yellow, var(--c1));
+  height: 400px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+}
+
+.internalCircleMenu {
+  position: absolute;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+}
+
+.internalCircleText {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border-radius: inherit;
+  height: 100%;
+}
+
+.wrap > a {
+  position: absolute;
+  text-decoration: none;
+  color: black;
+}
+
+.wrap > a:nth-child(1) {
+  color: white;
+  transform-origin: center;
+  transform: rotate(-60deg) translate(-120%, 400%);
+}
+
+.wrap > a:nth-child(2) {
+  color: red;
+  transform-origin: center;
+  transform: rotate(-120deg) translate(-340%, -600%);
+}
+
+.wrap > a:nth-child(3) {
+  color: green;
+  transform-origin: center;
+  transform: rotate(-180deg) translate(-240%, -1900%);
+}
+
+.wrap > a:nth-child(4) {
+  color: gray;
+  transform-origin: center;
+  transform: rotate(-240deg) translate(100%, -2180%);
+}
+
+.wrap > a:nth-child(5) {
+  color: cyan;
+  transform-origin: center;
+  transform: rotate(-300deg) translate(340%, -1150%);
+}
